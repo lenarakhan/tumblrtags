@@ -1,14 +1,23 @@
 <script src="https://rawgit.com/lenarakhan/tumblrtags/master/src/tumblrTags.js"></script>
-<script style="text/javascript">
+<script type="text/javascript">
 // Create a TumblrTags object, set the username of the blog.
-var tagFetcher = new window.TumblrTags(username);
+var tagFetcher = new window.TumblrTags(lenarakahn);
 
 // Hook in to the ready event.
 // The anonymous function will be fired when all the tags are fetched.
 tagFetcher.on(
 	'ready',
 	function(tags){
-		// Do something with the tags
+		var html = '';
+                        if(tags.length == 0) {
+                            html = '<li>No tags found</li>';
+                        }
+                        for(var i = 0; i < tags.length; i++) {
+                            html += '<li>';
+                            html += '<a href="http://lenarakahn.tumblr.com/tagged/' + tags[i].tag + '">' + tags[i].tag + ' (' + tags[i].hits + ')</a>';
+                            html += '</li>';
+                        }
+                        $('#tags').html(html);
 		console.log(tags);
 	}
 );
