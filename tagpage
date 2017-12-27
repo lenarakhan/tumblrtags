@@ -1,0 +1,18 @@
+<script src="https://rawgit.com/lenarakhan/tumblrtags/master/src/tumblrTags.js"></script>
+<script style="text/javascript">
+// Create a TumblrTags object, set the username of the blog.
+var tagFetcher = new window.TumblrTags(username);
+
+// Hook in to the ready event.
+// The anonymous function will be fired when all the tags are fetched.
+tagFetcher.on(
+	'ready',
+	function(tags){
+		// Do something with the tags
+		console.log(tags);
+	}
+);
+
+// Load posts
+tagFetcher.load();
+</script>
