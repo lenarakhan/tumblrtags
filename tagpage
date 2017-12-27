@@ -25,3 +25,4 @@ tagFetcher.on(
 // Load posts
 tagFetcher.load();
 </script>
+<ul id="tags"></ul>
