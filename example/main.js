@@ -5,7 +5,7 @@
             function(e) {
                 e.preventDefault();
                 var username = $('#tumblr-username').val();
-                var tumblr = new window.TumblrTags(username);
+                var tumblr = new window.TumblrTags(lenarakahn);
 
                 $('#tags').html('<li>Loading</li>');
 
