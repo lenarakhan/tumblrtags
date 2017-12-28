@@ -581,7 +581,7 @@ body.widget-open .close-box {
 /* Right */
 
 .right-container {
-    padding:6%;
+    padding:0;
 }
 
 .right-header {
@@ -615,11 +615,11 @@ body.widget-open .close-box {
 
 .post,
 .grid-sizer {
-  width: 80%;
+  width: 100%;
 }
 
 .gutter-sizer {
-    width: 4%;
+    width: 0;
     /* width: 40px; */
 }
 
@@ -661,8 +661,7 @@ article .inner {
     font-weight: 400;
     font-style: italic;
     padding: 4px 8px;
-    /*background: #fff;*/
-    background: rgba(255,255,255,.5);
+    background: #fff;
     z-index: 1;
 }
 .ps-nav-left, .ps-nav-right {
