@@ -294,7 +294,6 @@ body.menu-open .action-overlay {
 }
 
 .action-overlay {
-    background:rgba(0,0,0,0.2);
     position:absolute;
     top:0;
     left:0;
