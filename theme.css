@@ -577,7 +577,7 @@ body.widget-open .close-box {
 /* Right */
 
 .right-container {
-    padding:0;
+    padding:20px 20px 20px 0;
 }
 
 .right-header {
@@ -682,6 +682,8 @@ article .inner {
 
 .photoset .inner {
     overflow: hidden;
+    background:#ffffff;
+
 }
 
 
