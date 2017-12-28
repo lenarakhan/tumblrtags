@@ -622,6 +622,10 @@ article .inner {
     background:#ffffff;
 }
 
+.posts .inner {
+    background:#ffffff;
+}
+
 
 
 
@@ -657,8 +661,6 @@ article .inner {
     height: 100%;
     width: 50%;
     top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
     z-index: 1;
 }
 .ps-nav-left {
@@ -839,14 +841,6 @@ margin-left:7px;
     clear: both;
 }
 
-
-
-
-.post-image img {
-  border-top-left-radius:3px;
-  border-top-right-radius:3px;
-}
-
 .post-image {
   width:100%;
   float:none;
@@ -860,11 +854,6 @@ margin-left:7px;
   height:100% ;
   overflow:hidden;
   margin:0;
-}
-
-.post-image img {
-  border-top-left-radius:3px;
-  border-bottom-left-radius:3px;
 }
 
 .visible {
@@ -979,16 +968,12 @@ body.post-page article {
     background-position: center center;
     background-size: cover;
     background-repeat:no-repeat;
-    -webkit-transition: left .7s cubic-bezier(.77,0,.175,1), margin .7s cubic-bezier(.77,0,.175,1);
-    transition: left .7s cubic-bezier(.77,0,.175,1), margin .7s cubic-bezier(.77,0,.175,1);
 }
 
 #right {
     width:50%;
     float:right;
     background-color:{color:Background};
-    -webkit-transition: right .7s cubic-bezier(.77,0,.175,1), margin .7s cubic-bezier(.77,0,.175,1);
-    transition: right .7s cubic-bezier(.77,0,.175,1), margin .7s cubic-bezier(.77,0,.175,1);
 }
 
 .inner{
@@ -1424,8 +1409,8 @@ ul.tags li {
 
 /* Plugins */
 .fusetip {
-    background: #494949;
-    color: #fff;
+  visibility: hidden;
+  opacity: 0;
 }
 /* Use this next selector to style things like font-size and line-height: */
 .fusetip .tooltipster-content {
